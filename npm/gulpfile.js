@@ -3,7 +3,7 @@ var gulp = require('gulp');
 var path = require('path');
 
 // Load up plugins automatically
-var plug = gulpLoadPlugins();
+var plug = require('gulp-load-plugins')();
 
 // Handles errors
 function handleError(err) {
