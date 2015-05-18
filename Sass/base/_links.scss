@@ -1,0 +1,32 @@
+///
+/// @file STARTERKIT/scss/base/_links.scss
+/// \file STARTERKIT/scss/base/_links.scss
+/// \ingroup STARTERKIT_SCSS_Base
+/// \brief Base styles for links.
+///
+
+// Drupal's skip to main content link
+// ----------------------------------
+#skip {
+  position: absolute;
+  left: -9999px;
+}
+body {
+	// Aliance page Specific styling
+	&.page-alliance {
+		#main-wrapper {
+			a {
+				#{$link} {
+					color: $link-color;
+					text-decoration: none;
+					outline: none;
+				}
+				#{$focus} {
+					color: $link-alt-color;
+					text-decoration: none;
+					outline: none;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,129 @@
+///
+/// @file STARTERKIT/scss/global/_fonts.scss
+/// \file STARTERKIT/scss/global/_fonts.scss
+/// \ingroup STARTERKIT_SCSS_Global
+/// \brief Web fonts and font includes
+///
+
+// Web fonts
+@font-face {
+    font-family: 'avenir_lt_std35_light';
+    src: url('../../campus_page_expansion/fonts/avenirltstd-light.eot');
+    src: url('../../campus_page_expansion/fonts/avenirltstd-light.eot?#iefix') format('embedded-opentype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-light.woff') format('woff'),
+         url('../../campus_page_expansion/fonts/avenirltstd-light.ttf') format('truetype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-light.svg#avenir_lt_std35_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'avenir_lt_std35_light_oblique';
+    src: url('../../campus_page_expansion/fonts/avenirltstd-lightoblique.eot');
+    src: url('../../campus_page_expansion/fonts/avenirltstd-lightoblique.eot?#iefix') format('embedded-opentype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-lightoblique.woff') format('woff'),
+         url('../../campus_page_expansion/fonts/avenirltstd-lightoblique.ttf') format('truetype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-lightoblique.svg#avenir_lt_std35_light_oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'avenir_lt_std45_book';
+    src: url('../../campus_page_expansion/fonts/avenirltstd-book.eot');
+    src: url('../../campus_page_expansion/fonts/avenirltstd-book.eot?#iefix') format('embedded-opentype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-book.woff') format('woff'),
+         url('../../campus_page_expansion/fonts/avenirltstd-book.ttf') format('truetype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-book.svg#avenir_lt_std45_book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'avenir_lt_std45_book_oblique';
+    src: url('../../campus_page_expansion/fonts/avenirltstd-bookoblique.eot');
+    src: url('../../campus_page_expansion/fonts/avenirltstd-bookoblique.eot?#iefix') format('embedded-opentype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-bookoblique.woff') format('woff'),
+         url('../../campus_page_expansion/fonts/avenirltstd-bookoblique.ttf') format('truetype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-bookoblique.svg#avenir_lt_std45_book_oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'avenir_lt_std55_roman';
+    src: url('../../campus_page_expansion/fonts/avenirltstd-roman.eot');
+    src: url('../../campus_page_expansion/fonts/avenirltstd-roman.eot?#iefix') format('embedded-opentype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-roman.woff') format('woff'),
+         url('../../campus_page_expansion/fonts/avenirltstd-roman.ttf') format('truetype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-roman.svg#avenir_lt_std55_roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'avenir_lt_std55_oblique';
+    src: url('../../campus_page_expansion/fonts/avenirltstd-oblique.eot');
+    src: url('../../campus_page_expansion/fonts/avenirltstd-oblique.eot?#iefix') format('embedded-opentype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-oblique.woff') format('woff'),
+         url('../../campus_page_expansion/fonts/avenirltstd-oblique.ttf') format('truetype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-oblique.svg#avenir_lt_std55_oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'avenir_lt_std65_medium';
+    src: url('../../campus_page_expansion/fonts/avenirltstd-medium.eot');
+    src: url('../../campus_page_expansion/fonts/avenirltstd-medium.eot?#iefix') format('embedded-opentype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-medium.woff') format('woff'),
+         url('../../campus_page_expansion/fonts/avenirltstd-medium.ttf') format('truetype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-medium.svg#avenir_lt_std65_medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'avenir_lt_std65MdOb';
+    src: url('../../campus_page_expansion/fonts/avenirltstd-mediumoblique.eot');
+    src: url('../../campus_page_expansion/fonts/avenirltstd-mediumoblique.eot?#iefix') format('embedded-opentype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-mediumoblique.woff') format('woff'),
+         url('../../campus_page_expansion/fonts/avenirltstd-mediumoblique.ttf') format('truetype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-mediumoblique.svg#avenir_lt_std65MdOb') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'avenir_lt_std85_heavy';
+    src: url('../../campus_page_expansion/fonts/avenirltstd-heavy.eot');
+    src: url('../../campus_page_expansion/fonts/avenirltstd-heavy.eot?#iefix') format('embedded-opentype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-heavy.woff') format('woff'),
+         url('../../campus_page_expansion/fonts/avenirltstd-heavy.ttf') format('truetype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-heavy.svg#avenir_lt_std85_heavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'avenir_lt_std85_heavy_oblique';
+    src: url('../../campus_page_expansion/fonts/avenirltstd-heavyoblique.eot');
+    src: url('../../campus_page_expansion/fonts/avenirltstd-heavyoblique.eot?#iefix') format('embedded-opentype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-heavyoblique.woff') format('woff'),
+         url('../../campus_page_expansion/fonts/avenirltstd-heavyoblique.ttf') format('truetype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-heavyoblique.svg#avenir_lt_std85_heavy_oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'avenir_lt_std95_black';
+    src: url('../../campus_page_expansion/fonts/avenirltstd-black.eot');
+    src: url('../../campus_page_expansion/fonts/avenirltstd-black.eot?#iefix') format('embedded-opentype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-black.woff') format('woff'),
+         url('../../campus_page_expansion/fonts/avenirltstd-black.ttf') format('truetype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-black.svg#avenir_lt_std95_black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'avenir_lt_std95_black_oblique';
+    src: url('../../campus_page_expansion/fonts/avenirltstd-blackoblique.eot');
+    src: url('../../campus_page_expansion/fonts/avenirltstd-blackoblique.eot?#iefix') format('embedded-opentype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-blackoblique.woff') format('woff'),
+         url('../../campus_page_expansion/fonts/avenirltstd-blackoblique.ttf') format('truetype'),
+         url('../../campus_page_expansion/fonts/avenirltstd-blackoblique.svg#avenir_lt_std95_black_oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

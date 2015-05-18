@@ -1,0 +1,67 @@
+.banner-with-overlay {
+	margin: 0 0 35px;
+	min-height: 435px;
+	position: relative;
+	.image {
+		position: relative;
+		//left: 50%;
+		margin: 0 -100%;
+		max-width: none;
+		background-size: 1600px auto;
+		min-height: 435px;
+		background-color: #ccc;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	.inner {	
+		position: absolute;
+		margin: 0 auto;
+		height: 435px;
+		padding: 0;
+		right: 0;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		.overlay {
+			background-color: rgba(0,0,0,0.68);
+			max-width: 100%;
+			padding: 30px 10px 0 15px;
+			color: #fff;
+			height: 100%;
+			h3 {
+				margin: 0 0 10px;
+				text-transform: uppercase;
+				font-weight: normal;
+				width: 60%;
+				color: #fff;
+				font-size: 24px;
+				font-family: $avenir45;
+			}
+			p {	
+				color: #fff;
+			}
+			ul {
+				color: #fff;
+				li {
+					margin: 0 0 15px;
+					line-height: 18px;
+					&:last-child {
+						margin: 0;
+					}
+				}
+			}
+		}
+	}	
+	@include breakpoint($break1) {
+		.inner {
+			.overlay {
+				max-width: 390px;
+			}
+		}		
+	}
+	@include breakpoint($break2) {
+		.inner {	
+			padding: 0;
+		}
+	}
+}

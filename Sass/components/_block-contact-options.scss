@@ -1,0 +1,187 @@
+#contact-options {
+	padding: 0;
+	@include clearfix-micro();
+	max-width: 810px;
+	margin: 0 auto 30px;
+	clear: both;
+	&.full {
+		max-width: 100%;
+		width: 100%;
+	}
+	> div {
+		text-align: center;
+		line-height: 60px;	
+		border-bottom: solid 1px #e0e0e0;
+		&#email {
+			font-family: $avenir55;
+			font-size: 14px;
+			a {
+				line-height: 21px;
+				padding: 0 0 0 40px;
+				color: #1fa8e3;
+				background: url('../images/content/bg-icon-mail.png') no-repeat 0 center;
+				display: inline-block;
+			}
+		}
+		&#chat {
+			font-family: $avenir55;
+			font-size: 14px;
+			cursor: pointer;
+			span {
+				line-height: 34px;
+				padding: 0 0 0 40px;
+				color: #333;
+				background: url('../images/content/bg-icon-chat.png') no-repeat 0 center;
+				display: inline-block;
+			}
+		}
+		&#phone {
+			font-family: $avenir55;
+			font-size: 14px;
+			span {
+				line-height: 33px;
+				padding: 0 0 0 35px;
+				color: #333;
+				background: url('../images/content/bg-icon-phone.png') no-repeat 0 center;
+				display: inline-block;
+				a {
+					color: #333;				
+				}
+			}
+		}
+		&#request {
+			font-family: $avenir55;
+			font-size: 16px;
+			a {
+				background: #59a9cd;
+				border: 1px solid #4f8bb5;
+				text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
+				box-shadow: 0 1px 1px rgba(0,0,0,.2);
+				background: linear-gradient(to bottom, #59a9cd 0%,#4590b6 100%);
+				padding: 10px;
+				color: #fff;		
+			}
+		}
+		&#apply-now {
+			background-image: linear-gradient(bottom, #a50000 0%, #d31d0d 100%);
+			border-radius: 0 0 10px 10px;
+			color: #fff;
+			font-family: $avenir35;
+			font-size: 18px;
+			text-transform: uppercase;
+			a {
+				color: #fff;	
+				display: block;
+				text-shadow: 0 1px 0 rgba(0,0,0,.3);
+			}
+		}			
+		&:last-child {
+			border: none;
+		}
+	}
+	@include breakpoint($break1) {
+		> div {
+			border: none;
+			border-right: solid 1px #e0e0e0;
+			@include layout(('grid': 12,'gutter': 0)) {	
+				&#chat {
+					@include float-span(6);
+					border-bottom: solid 1px #e0e0e0;
+				}
+				&#phone {
+					@include float-span(6);
+					border-bottom: solid 1px #e0e0e0;
+				}
+				&#request {
+					@include float-span(6);
+				}
+				&#apply-now {
+					@include float-span(6);
+					border-radius: 0 0 10px 0;
+					border-right: none;
+				}
+			}		
+		}		
+		&.full {
+			> div {
+				border: none;
+				border-right: solid 1px #e0e0e0;
+				@include layout(('grid': 12,'gutter': 0)) {	
+					&#email {
+						@include float-span(6);
+						border-bottom: solid 1px #e0e0e0;
+					}
+					&#chat {
+						@include float-span(6);
+						border-bottom: solid 1px #e0e0e0;
+						border-right: none;
+					}
+					&#phone {
+						@include float-span(6);
+						border-bottom: none;
+					}
+					&#request {
+						@include float-span(6);
+						border-right: none;
+					}
+					&#apply-now {
+						clear: both;
+						width: 100%;
+						border-radius: 0 0 10px 10px;
+					}
+				}		
+			}	
+		}
+	}
+	@include breakpoint($break2) {
+		> div {
+			border-right: solid 1px #e0e0e0;
+			@include layout(('grid': 12,'gutter': 0)) {	
+				&#chat {
+					@include float-span(3);	
+					border-bottom: none;
+					border-right: solid 1px #e0e0e0;
+				}
+				&#phone {
+					@include float-span(3);
+					border-bottom: none;
+				}
+				&#request {
+					@include float-span(4);
+					border-bottom: none;	
+					border-right: none;
+				}
+				&#apply-now {
+					@include float-span(2, 'last');
+					border-radius: 0 10px 10px 0;
+				}
+			}
+		}
+		&.full {
+			> div {
+				border-right: solid 1px #e0e0e0;
+				@include layout(('grid': 12,'gutter': 0)) {	
+					&#email {
+						@include float-span(3);
+						border-bottom: none;
+					}
+					&#chat {
+						@include float-span(2);	
+						border-bottom: none;
+						border-right: solid 1px #e0e0e0;
+					}
+					&#phone {
+						@include float-span(2.5);
+					}
+					&#request {
+						@include float-span(2.5);	
+					}
+					&#apply-now {
+						@include float-span(2, 'last');
+						border-radius: 0 10px 10px 0;
+					}
+				}
+			}
+		}	
+	}
+}

@@ -1,0 +1,85 @@
+#alliance-accordion {
+	margin: 0 0 40px;
+	.accordion-header {
+		color: #fff;
+		font-family: $avenir45;
+		font-size: 20px;
+		line-height: 30px;
+		font-weight: 700;	
+		border-radius: 10px 10px 0 0;
+		background-color: #656565;
+		margin: 0;
+		padding: 0 10px;
+	}
+	.accordion-list {
+		> li {
+			background: none;
+			padding: 0;
+			margin: 0;
+			background-image: linear-gradient(bottom, #feffff 0%, #e8e7e7 100%);
+			h3 {
+				margin: 0;
+				font-size: 18px;
+				line-height: 32px;
+				color: #c8160a;
+				font-family: $avenir85;
+				font-weight: normal;
+				padding: 0 0 0 45px;
+				background: url('../images/content/bg-accordion-plus.png') no-repeat 10px center;
+				cursor: pointer;
+			}
+			.row {
+				display: none;
+				padding: 5px 15px 20px 45px;
+				h4 {
+					margin: 0 0 10px;
+					font-size: 14px;
+					line-height: 22px;
+					font-family: $avenir55;
+					font-weight: normal;
+				}
+				ul {
+					li {
+						font-size: 14px;
+						line-height: 22px;
+						font-family: $avenir55;
+						margin: 0 0 10px;
+						&:last-child {
+							margin: 0;
+						}
+					}
+				}
+			}
+			&.active {		
+				background-image: linear-gradient(bottom, #feffff 0%, #e8e7e7 100%);
+				h3 {
+					color: #333;
+					background: url('../images/content/bg-accordion-minus.png') no-repeat 10px center;
+				}
+				.row {
+					display: block;
+				}
+			}
+		}
+	}
+	@include breakpoint($break1) {
+		.accordion-list {
+			> li {
+				.row {
+					ul {
+						li {
+							max-width: 75%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+#block-alliance-pages-ally-mil-find-benefits {
+	#alliance-accordion {
+		margin-top: 40px;
+	}
+}	

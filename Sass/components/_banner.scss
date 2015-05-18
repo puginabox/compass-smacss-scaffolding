@@ -1,0 +1,75 @@
+#alliance-banner {
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 263px;
+	background-position: center center;	
+	.image-wrapper {
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+			min-height: 263px;
+		}
+	}
+	h1 {
+		position: absolute;
+		right: 0;
+		top: 35px;
+		left: 20px;
+		margin: auto;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 24px;
+		line-height: 32px;
+		font-family: $avenir65;
+		font-weight: normal;
+		padding: 0;
+		width: 100%;
+		span {
+			display: block;
+			font-size: 26px;
+			line-height: 30px;
+			font-family: $avenir85;
+		}
+	}
+	@include breakpoint($break1) {
+		h1 {
+			font-size: 36px;
+			line-height: 40px;
+			max-width: $break1;
+			left: 75px;
+			span {
+				font-size: 44px;
+				line-height: 48px;
+			}
+		}	
+	}
+	@include breakpoint($break2) {
+		h1 {
+			font-size: 48px;
+			line-height: 52px;
+			max-width: $break2;
+			span {
+				font-size: 56px;
+				line-height: 60px;
+			}
+		}	
+	}
+}
+.utility-bar {
+	background-color: #999;
+	@include clearfix-micro();
+	padding: 5px 0;
+	.utility {
+		max-width: $break2;
+		margin: 0 auto;
+		float: none !important;
+		padding: 0;
+		text-align: right;
+		a,
+		span {
+			color: #3d3d3d !important;
+		}
+	}
+}

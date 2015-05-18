@@ -1,0 +1,89 @@
+#find-a-campus {
+	margin: 0 0 30px;
+	form {
+		text-align: center;
+		.postal-code-container {
+			display: inline-block;
+			text-align: center;
+			width: auto !important;
+			margin-top: 15px;
+			& + .postal-code-container {
+				clear: both;
+				width: 100% !important;
+			}
+			.submit-button-field {
+				 float: none !important;
+			}
+			.cell {
+				margin: 0 !important;
+				height: 28px;
+				line-height: 28px;
+				float: none;
+				&.or-text-field {
+					text-transform: lowercase;
+					font-size: 14px;
+				}
+				.form-item,
+				input  {
+					width: auto !important;	
+					line-height: 28px;
+					padding: 0 10px;	
+					color: #858585 !important;
+					font-size: 14px;	
+				}
+				button {
+					padding:0 8px !important; 
+					line-height: 28px !important;
+				}
+				.form-item {
+					input,
+					select {
+						min-width: 200px;
+					}
+					&.form-type-select {
+						min-width: 200px !important;
+						text-align: left;
+						span,
+						.selector {
+							background: #fff;
+						}
+						.selector {
+							border: solid 1px #ccc;
+							border-radius: 4px;
+							position: relative;
+							&:after {
+								position: absolute;
+								content: '';
+								border-right: 4px solid transparent;
+								border-left: 4px solid transparent;
+								border-top: 4px solid #787878;
+								margin: 0;
+								position: absolute;
+								top: 50%;
+								right: 10px;
+								left: inherit;
+								width: 1px;
+								height: 4px;
+								z-index: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+		@include breakpoint($break1) {
+			.postal-code-container {
+				& + .postal-code-container {
+					clear: none;
+					width: auto !important;
+				}
+				.submit-button-field {
+					 float: right !important;
+				}
+				.cell {
+					float: left;
+				}
+			}		
+		}
+	}
+}

@@ -1,0 +1,87 @@
+.alliance-vid-container {
+	@include clearfix-micro();
+	margin: 0 0 45px;
+	.vid-placard {
+		@include background-clip(padding-box);
+		background-color: #fff;
+		@include box-shadow(2px 4px 7px rgba(0,0,0,.1));
+		padding: 40px 35px 30px 35px;
+		color: #353535;
+		font-size: 16px;
+		min-height: 205px;
+		border-radius: 0 0 20px 20px;
+		margin-top: 0;
+		p {
+			margin: 0;
+			&.quote {
+				font-family: $avenir45;
+				font-size: 21px;
+				color: #333;
+				margin: 0 0 25px;
+				padding: 0 0 0 30px;
+				background: url('../images/content/bg-quote.png') no-repeat 0 0;
+			}
+			&.speaker {
+				font-family: $avenir35;
+				text-transform: uppercase;
+				text-align: right;
+				span {
+					font-family: $avenir35italic;
+				}
+			}	
+			&.link {
+				font-family: $avenir45;
+				text-align: center;
+				padding-top: 25px;
+			}			
+		}
+	}
+	.alliance-video {
+		position: relative;
+    height: 0;
+		padding-bottom: 56.25%;		
+		object,
+		iframe {
+			margin: 0;
+			display: block;
+			position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;			
+		}
+	}
+	@include breakpoint($break2) {
+		.vid-placard {
+			max-width: 450px;		
+		}
+		&.text-right {
+			.vid-placard {
+				border-radius: 0 20px 20px 0;
+				@include grid-span(5.75,7.25);
+			}
+			.alliance-video {
+				@include grid-span(6.5,1);
+			}
+		}
+		&.text-left {
+			.vid-placard {
+				border-radius: 20px 0 0 20px;
+				@include grid-span(5.75,1);
+			}
+			.alliance-video {
+				@include grid-span(6.5,6.5);
+			}
+		}	
+		.alliance-video {
+			max-width: 510px;
+			padding-bottom: 0;
+			height: 280px;
+			object,
+			iframe {
+				position: static;
+				height: 100%;
+			}
+		}
+	}
+}

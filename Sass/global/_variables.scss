@@ -1,0 +1,115 @@
+///
+/// @file STARTERKIT/scss/global/_variables.scss
+/// \file STARTERKIT/scss/global/_variables.scss
+/// \ingroup STARTERKIT_SCSS_Global
+/// \brief Variables
+///
+
+// Singularity global config.
+
+@include sgs-change('debug', true);
+
+$break1: 600px;
+$break2: 960px;
+
+@include add-grid(4);
+@include add-grid(12 at $break1);
+
+@include add-gutter(1/3);
+
+// Box Model
+$box-model: 'border-box';
+
+// Typographic
+$base-font-size     : 12px;
+$base-line-height   : 14px;
+
+// Assign sizes in px
+$xxxsmallpx    : 7px;
+$xxsmallpx     : 8px;
+$xsmallpx      : 9px;
+$smallpx       : 10px;
+$normpx        : $base-font-size;
+$medpx         : 13px;
+$largepx       : 18px;
+$xlargepx      : 20px;
+$xxlargepx     : 21px;
+$xxxlargepx    : 24px;
+$xxxxlargepx   : 35px;
+$xxxxxlargepx  : 42px;
+
+$type-indent  : $xxlargepx;
+
+$rhythm-unit                : rem;
+$rem-with-px-fallback       : true;
+
+$show-baseline-grid-backgrounds   : false;
+$round-to-nearest-half-line       : true;
+$grid-background-baseline-height  : $base-line-height;
+$grid-background-baseline-color   : #efefef;
+
+$sans-stack      : Arial, Helvetica, sans-serif;
+$serif-stack     : Georgia, 'Times New Roman', Times, serif;
+$mono-stack      : monospace, serif;
+
+// Avenir Fonts
+$avenir35				 : 'avenir_lt_std35_light';
+$avenir35italic	 : 'avenir_lt_std35_light_oblique';
+$avenir45				 : 'avenir_lt_std45_book';
+$avenir45italic	 : 'avenir_lt_std45_book_oblique';
+$avenir55				 : 'avenir_lt_std55_roman';
+$avenir55italic	 : 'avenir_lt_std55_oblique';
+$avenir65				 : 'avenir_lt_std65_medium';
+$avenir65italic	 : 'avenir_lt_std65MdOb';
+$avenir85				 : 'avenir_lt_std85_heavy';
+$avenir85italic	 : 'avenir_lt_std85_heavy_oblique';
+$avenir95				 : 'avenir_lt_std95_black';
+$avenir95italic	 : 'avenir_lt_std95_black_oblique';
+
+// Layout variables
+// ----------------
+// Variables directly related to partials in the ../layout/ directory.
+
+// Colors with styleguide comments
+$color-1     : #c11a12; // red
+$color-2     : #555; // text grey
+$color-3     : #666; // medium grey
+
+// Default Colors
+$body-text-color   : #555;
+$link-color        : $color-1;
+$link-alt-color    : $color-2;
+$headers-text-color: #555;
+
+// Other colors
+
+
+// Links
+// Ex:
+// a {
+//   #{$link} {
+//     text-decoration: none;
+//   }
+//  }
+$link   : '&:link, &:visited';
+$focus  : '&:focus, &:hover, &:active, &.active';
+
+// Define sprites used across the site
+// -----------------------------------
+// Uncomment below if using sprites.
+//$icons: sprite-map("./global/*.png");
+
+// General support settings
+// ----------------
+$legacy-support-for-ie6: false;
+$legacy-support-for-ie7: false;
+$legacy-support-for-ie8: true;
+
+// Vendor Prefixes
+// ---------------
+$experimental-support-for-mozilla : true;
+$experimental-support-for-webkit : true;
+$support-for-original-webkit-gradients : true;
+$experimental-support-for-opera : true;
+$experimental-support-for-microsoft : true;
+$experimental-support-for-khtml : true;

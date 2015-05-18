@@ -1,0 +1,20 @@
+///
+/// @file STARTERKIT/scss/global/mixins/_custom-mixins.scss
+/// \file STARTERKIT/scss/global/mixins/_custom-mixins.scss
+/// \ingroup STARTERKIT_SCSS_Global
+/// \brief Custom mixins and functions
+///
+/// These are custom mixins and functions that are specific to
+/// this project.
+///
+/// Please include any requirements (such as variables or gems like
+/// compass, breakpoint, compass-respond) in the comments for the
+/// individual mixins below.
+///
+///
+
+@mixin font($font-name, $weight, $style) {
+	font-family: $font-name;
+	font-weight: $weight;
+	font-style: $style;
+}

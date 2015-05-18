@@ -1,0 +1,19 @@
+// Body
+// ----
+// Applies the most basic settings for the body element.
+@include establish-baseline;
+
+
+body {
+	&.page-alliance {
+		color: $body-text-color;
+		@include baseline-grid-background;
+		line-height: normal;	
+		#main-wrapper {
+			* {
+				@include box-sizing($box-model);
+			}		
+		}
+	}
+}
+

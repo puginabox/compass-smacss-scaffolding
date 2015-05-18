@@ -1,0 +1,187 @@
+.placard-wrap {
+	@include clearfix-micro();
+	margin: 0 0 40px;
+	.placard {
+		border-radius: 13px / 9px;
+		background-clip: padding-box;
+		background-color: #fff;
+		box-shadow: 2px 4px 7px rgba(0,0,0,.1);
+		margin: 0 0 20px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		.inner {
+			position: relative;
+			padding: 15px 10px 30px;
+			height: 100%;
+			h2,h3,h4,h5,h6 {
+				font-weight: normal;
+				margin: 0;
+			}
+			h2 {
+				text-align: center;
+				color: #333;
+				font-family: $avenir85;
+				font-size: 22px;
+				margin: 0 0 10px;
+			}
+			h3 {
+				text-transform: uppercase;
+				color: #bb0000;
+				font-family: $avenir35;
+				font-size: 21px;
+				line-height: 24px;
+			}
+			h4 {
+				font-size: 14px;
+				color: #01841d;
+				font-family: $avenir45;
+			}
+			h5 {
+				font-size: 14px;
+				color: #01841d;
+				font-family: $avenir85;
+			}
+			img {
+				display: block;
+				width: 100%;
+				margin: 0 0 15px;
+			}
+			p {
+				font-family: $avenir45;
+				font-size: 14px;
+				line-height: 18px;
+				color: #333;
+				&.first {
+					margin-top: 35px;
+				}
+				&.light {
+					color: #939598;
+					padding: 0 0 10px;
+				}
+			}
+			.absolute-anchor {
+				font-family: $avenir35;
+				font-size: 14px;
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 15px;
+				display: block;
+				text-align: center;
+				padding: 0 10px;
+			}
+			.form-container {
+				@include clearfix-micro();
+				margin: 0 0 20px;
+				text-align: center;
+				form {
+					margin: 0;
+					.form-fields {
+						margin: 0 0 5px;
+						&:nth-child(2) {
+							margin: 0;
+						}
+					}
+					.form-item {
+						margin: 0;
+						.selector, 
+						span,
+						select {
+							text-align: left;
+							background: none;
+							width: 100%;
+							max-width: 205px;
+						}
+						.selector {
+							border: solid 1px #ccc;
+							border-radius: 4px;
+							position: relative;
+							&:after {
+								position: absolute;
+								content: '';
+								border-right: 4px solid transparent;
+								border-left: 4px solid transparent;
+								border-top: 4px solid #787878;
+								margin: 0;
+								position: absolute;
+								top: 50%;
+								right: 10px;
+								left: inherit;
+								width: 1px;
+								height: 4px;
+								z-index: 0;
+							}
+						}
+					}
+					#b21-submit {
+						float: none;
+						margin: 15px 0 0;
+						padding: 6px 10px 4px;
+					}
+				}
+			}
+			.center-text {
+				text-align: center;
+				padding-bottom: 25px;
+				* {
+					display: inline-block;
+					margin-bottom: 10px;
+					text-align: left;
+					:last-child {
+						margin: 0;
+					}
+				}
+				.center {
+					text-align: center;
+					margin: 20px 0 5px;
+					width: 90%;
+				}
+			}
+		}
+	}
+	@include breakpoint($break1) {
+		&.cols-3 {
+			.placard {
+				@include grid-span(4);
+				margin-bottom: 0;
+				max-width: 290px;
+				&:nth-child(2) {
+					@include grid-span(4,5);
+				}
+				&:nth-child(3) {
+					@include grid-span(4,9);
+				}
+			}
+		}	
+		&.cols-4 {
+			.placard {
+				@include float-span(6);
+				&:nth-child(2n){
+					@include float-span(6,'last');
+				}
+			}
+		}	
+	}
+	@include breakpoint($break2) {
+		&.cols-3 {
+			.placard {
+				&:nth-child(2) {
+					@include grid-span(4,5.105);
+				}
+			}
+		}	
+		&.cols-4 {
+			.placard {
+				@include float-span(3);
+				margin-bottom: 0;
+				&:nth-child(2n){
+					@include float-span(3);
+				}
+				&:last-child {
+					@include float-span(3,'last');
+				}
+			}
+		}	
+	}
+}
